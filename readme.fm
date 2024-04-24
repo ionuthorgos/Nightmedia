@@ -1,0 +1,22 @@
+Playwright has its own test runner for end-to-end tests, we call it Playwright Test.
+
+Resilient • No flaky tests
+Auto-wait. Playwright waits for elements to be actionable prior to performing actions. It also has a rich set of introspection events. The combination of the two eliminates the need for artificial timeouts - a primary cause of flaky tests.
+
+# Project Setup
+
+## Pre-installation Requirements:
+1. Install Node.js
+2. Install Playwright (JavaScript version)
+
+## Running the Project:
+To get the project up and running on your local machine, follow these steps:
+
+1. npm install
+2. To run a specific test file with debugging enabled:
+npx playwright test {yourfileName}.spec.ts --debug
+
+In our case I suggest to use the playwright interface from where you can select a spicifc test or all:
+npx playwright test  --ui  --debug
+
+I am suggest to select "Run all button" to see that the tests are fullyParallel running
