@@ -76,7 +76,6 @@ test('prices are sorted in ascending order', async ({ page }) => {
 
     let priceNumbers = priceTexts.map(price => parseFloat(price))
 
-    console.log(priceTexts);
     // Check if an array is sorted ascending
     function isSortedAscending(arr) {
         for (let i = 1; i < arr.length; i++) {
